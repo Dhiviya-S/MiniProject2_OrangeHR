@@ -4,6 +4,7 @@ This project automates the testing of the web application https://opensource-dem
 
 The test scripts are developed using Selenium with Python and Pytest, following the Page Object Model (POM) framework and adhering to Object-Oriented Programming (OOP) principles. The test data is externalized (CSV) using Data Driven framework, and common configurations are handled in config.py.The suite includes 10 detailed test cases focused on verifying page behavior, accessibility of essential elements, navigation flows, and login/logout processes.
 
+
 **Project Architecture :**
 
 **MiniProject2/**
@@ -42,6 +43,7 @@ The test scripts are developed using Selenium with Python and Pytest, following 
 ├── requirements.txt
 ├── README.md
 
+
 **Tools & Technologies:**
 *     Selenium WebDriver
 *     Python 
@@ -53,6 +55,7 @@ The test scripts are developed using Selenium with Python and Pytest, following 
 *     Explicit Waits
 *     Exception Handling
 *     Pytest HTML Reports
+
 
 
 **Test Suite :**
@@ -111,6 +114,7 @@ Test Case 10: Initiate a claim request and check the assigned claim on Claim lis
 	* After successful claim submission check claim of an employee is submitted on the claim list
 
 
+
 **Instructions:**
 
 1.Ensure Selenium,Python and any Browser(Chrome,Firefox,Edge) installed in your system. 
@@ -134,6 +138,7 @@ Test Case 10: Initiate a claim request and check the assigned claim on Claim lis
 	>pytest pytest -v -s Tests/test_01_validate_login.py(for any specific file)
 
 	>pytest pytest -v -s Tests/test_01_validate_login.py::test_validate_login(for specific method in a test file)
+
 
 
 **To Generate HTML Report:**
