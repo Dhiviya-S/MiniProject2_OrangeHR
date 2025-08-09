@@ -1,4 +1,4 @@
-                        ** Automation Testing of HR Management Web Application(ORANGE HRM) **
+                 ** Automation Testing of HR Management Web Application(ORANGE HRM) **
 		
 This project automates the testing of the web application https://opensource-demo.orangehrmlive.com by simulating user actions and validating its core functionalities. The key modules covered include login, menu accessibility, user management,forgot password link, assigning leave, initiating claims, and logout functionality. It ensures the reliability of critical components through both positive and negative test scenarios.
 
