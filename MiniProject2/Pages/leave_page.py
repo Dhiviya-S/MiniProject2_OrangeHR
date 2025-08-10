@@ -128,7 +128,6 @@ class LeavePage(BasePage):
         self.find_element(self.ASSIGN_BUTTON)
         self.click_element(self.ASSIGN_BUTTON)
         self.wait_for_text(self.SUCCESS_MESSAGE)
-        # Optional:time.sleep(2)
 
 
         # Optional if there is insufficient balance days
