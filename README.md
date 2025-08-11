@@ -156,6 +156,9 @@ To execute single file and generate html report,
 	>pytest -v -s Tests/test_01_validate_login.py   --html=case01_report.html   --self-contained-html
 
 
+**Screen Recording**:https://drive.google.com/file/d/1OzZ3XA--tmqTX2rZV14XwhWyQ-VXCugB/view?usp=sharing
+
+
 
 
 
