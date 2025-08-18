@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 # To use the methods from base_page importing Class BasePage.
 from Pages.base_page import BasePage
 # Importing TimeoutException to raise when error occurs
-from selenium.common import TimeoutException
+from selenium.common.exceptions import TimeoutException
 
 
 #AdminPage inherits BasePage. AdminPage contains locators and methods to be used in test cases.
@@ -59,14 +59,14 @@ class AdminPage(BasePage):
         self.click_element(status_option)
 
         # Employee name can be chosen from the available names in the webpage
-        self.find_element(self.EMPLOYEE_NAME).send_keys(employee_name)
+        self.enter_text(self.EMPLOYEE_NAME,employee_name)
         self.AUTOFILL_NAME = self.fill_name(employee_name)
         self.click_element(self.AUTOFILL_NAME)
 
         # Finds username,password and enters the data
-        self.find_element(self.USERNAME).send_keys(username)
-        self.find_element(self.PASSWORD).send_keys(password)
-        self.find_element(self.CONFIRM_PASSWORD).send_keys(confirm_password)
+        self.enter_text(self.USERNAME,username)
+        self.enter_text(self.PASSWORD,password)
+        self.enter_text(self.CONFIRM_PASSWORD,confirm_password)
 
         # Submits Add User and Successfully Saved appears
         self.click_element(self.SUBMIT)
@@ -78,7 +78,7 @@ class AdminPage(BasePage):
 
         # Clicks Admin and enters the username given in config.py and clicks search
         self.click_element(self.ADMIN_MENU)
-        self.find_element(self.USERNAME_SECTION).send_keys(username)
+        self.enter_text(self.USERNAME_SECTION,username)
         self.click_element(self.SEARCH)
 
         # Searches the table of records and returns the username else raises TimeoutException
