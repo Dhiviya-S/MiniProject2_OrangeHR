@@ -97,12 +97,12 @@ class LeavePage(BasePage):
     def assigning_leave(self,employee_name,leave_type,from_date,to_date):
 
         # Fills and selects the available employee name
-        self.find_element(self.EMPLOYEE_NAME).send_keys(employee_name)
+        self.enter_text(self.EMPLOYEE_NAME,employee_name)
         self.AUTOFILL_NAME=self.fill_name(employee_name)
         self.click_element(self.AUTOFILL_NAME)
 
         # Fills and selects the Leave Type
-        self.find_element(self.LEAVE_TYPE).send_keys(leave_type)
+        self.enter_text(self.LEAVE_TYPE,leave_type)
         self.AUTOFILL_LEAVE_TYPE=self.get_option(leave_type)
         self.click_element(self.AUTOFILL_LEAVE_TYPE)
 
@@ -148,7 +148,7 @@ class LeavePage(BasePage):
         self.click_element(self.AUTOFILL_STATUS)
 
         # Fills the Employee Name and Searches the Records
-        self.find_element(self.EMPLOYEE_NAME).send_keys(employee_name)
+        self.enter_text(self.EMPLOYEE_NAME,employee_name)
         self.AUTOFILL_NAME=self.fill_name(employee_name)
         self.click_element(self.AUTOFILL_NAME)
         self.click_element(self.SEARCH)
