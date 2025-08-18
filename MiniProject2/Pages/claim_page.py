@@ -108,7 +108,7 @@ class ClaimPage(BasePage):
 
         # Finds the employee name in the claim list record
         locator = self.get_employee_name(employee_name)
-        self.wait_for_element(locator)
+        self.wait_for_text(locator)
         employee_record = self.find_element(locator)
 
         # If employee name is not found on claim list then it raises AssertionError
