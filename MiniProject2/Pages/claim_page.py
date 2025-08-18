@@ -58,12 +58,12 @@ class ClaimPage(BasePage):
 
         # Clicks Submit Claim icon and fills the event type(Accommodation,Medical,Travel)
         self.click_element(self.SUBMIT_CLAIM_ICON)
-        self.find_element(self.EVENT_DROPDOWN).send_keys(event)
+        self.enter_text(self.EVENT_DROPDOWN,event)
         self.EVENTS_CLAIM = self.get_option(event)
         self.click_element(self.EVENTS_CLAIM)
 
         # Fills the Currency type(Indian,Euro,Algerian,..)
-        self.find_element(self.CURRENCY_DROPDOWN).send_keys(currency)
+        self.enter_text(self.CURRENCY_DROPDOWN,currency)
         self.CURRENCY_CLAIM = self.get_option(currency)
         self.click_element(self.CURRENCY_CLAIM)
 
@@ -78,13 +78,13 @@ class ClaimPage(BasePage):
         self.click_element(self.ADD_EXPENSES)
 
         # Fills the expenses type(Accommodation,Medical,Travel)
-        self.find_element(self.EXPENSES_TYPE).send_keys(expense_type)
+        self.enter_text(self.EXPENSES_TYPE,expense_type)
         self.EXPENSES = self.get_option(expense_type)
         self.click_element(self.EXPENSES)
 
         # Locates the claim date and amount and fills the value
-        self.find_element(self.CLAIM_DATE).send_keys(claim_date)
-        self.find_element(self.CLAIM_AMOUNT).send_keys(claim_amount)
+        self.enter_text(self.CLAIM_DATE,claim_date)
+        self.enter_text(self.CLAIM_AMOUNT,claim_amount)
 
         # Clicks Save and Submit Claim Button
         self.click_element(self.SAVE_CLAIM)
@@ -98,7 +98,7 @@ class ClaimPage(BasePage):
         self.click_element(self.EMPLOYEE_CLAIMS)
 
         # Fills the Employee Name
-        self.find_element(self.EMPLOYEE_NAME).send_keys(employee_name)
+        self.enter_text(self.EMPLOYEE_NAME,employee_name)
         self.AUTOFILL_NAME = self.fill_name(employee_name)
         self.click_element(self.AUTOFILL_NAME)
 
