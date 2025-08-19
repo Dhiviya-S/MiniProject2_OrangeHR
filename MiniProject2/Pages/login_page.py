@@ -61,6 +61,7 @@ class LoginPage(BasePage):
 
         # Navigates to reset dialog box and mail is sent to user
         self.find_element(self.RESET_CONTAINER)
+        self.wait_for_text(self.RESET_MESSAGE)
         message=self.find_element(self.RESET_MESSAGE)
         return message.text
 
