@@ -56,7 +56,7 @@ class LoginPage(BasePage):
 
         # Clicks forgot password link and enters the username and clicks reset password
         self.click_element(self.FORGOT_PASSWORD)
-        self.enter_text(self.REGISTERED_USERNAME,username)
+        self.find_element(self.REGISTERED_USERNAME).send_keys(username)
         self.click_element(self.RESET_PASSWORD)
 
         # Navigates to reset dialog box and mail is sent to user
