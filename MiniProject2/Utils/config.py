@@ -18,13 +18,13 @@ invalid_username="Hamleys"
 
 # Leave Details
 Entitled_Days=25
-From_Date="2025-08-18"
-To_Date="2025-08-21"
+From_Date="2025-08-27"
+To_Date="2025-08-29"
 Leave_Type="CAN - Personal"
 Leave_Status="Scheduled"
 
 # Claim Details
 Event_Type="Accommodation"
 Currency_Type="Indian Rupee"
-Claim_Date="2025-09-20"
+Claim_Date="2025-09-26"
 Claim_Amount=3000
