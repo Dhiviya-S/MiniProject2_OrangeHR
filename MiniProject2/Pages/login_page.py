@@ -20,7 +20,7 @@ class LoginPage(BasePage):
 
     # Forgot password, username locator
     FORGOT_PASSWORD=(By.XPATH,'//div[@class="orangehrm-login-forgot"]')
-    REGISTERED_USERNAME=(By.XPATH,'//input[@placeholder="Username"]')
+    REGISTERED_USERNAME=(By.XPATH,'//input[@class="oxd-input oxd-input--active"]')
 
     # Reset Password Section
     RESET_PASSWORD=(By.XPATH,'//button[@type="submit"]')
