@@ -18,8 +18,8 @@ invalid_username="Hamleys"
 
 # Leave Details
 Entitled_Days=25
-From_Date="2025-08-27"
-To_Date="2025-08-29"
+From_Date="2025-09-27"
+To_Date="2025-09-29"
 Leave_Type="CAN - Personal"
 Leave_Status="Scheduled"
 
